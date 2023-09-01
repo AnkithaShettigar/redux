@@ -1,23 +1,14 @@
-import logo from './logo.svg';
 import './App.css';
+import Employee from './component/props/Employee';
+import User from './component/props/User';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <User
+        data={{ name: 'Ankitha', Age: 25, Role: 'Associate Software Engineer' }}
+      />
+      <Employee details={{ id: 1, shift: 'day', job: 'maintainance' }} />
     </div>
   );
 }
