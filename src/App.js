@@ -1,14 +1,15 @@
 import './App.css';
 import Employee from './component/props/Employee';
 import User from './component/props/User';
-
+import HomeContainer from './containers/HomeContainer';
 function App() {
   return (
     <div className="App">
-      <User
+      {/* <User
         data={{ name: 'Ankitha', Age: 25, Role: 'Associate Software Engineer' }}
       />
-      <Employee details={{ id: 1, shift: 'day', job: 'maintainance' }} />
+      <Employee details={{ id: 1, shift: 'day', job: 'maintainance' }} /> */}
+      <HomeContainer />
     </div>
   );
 }
