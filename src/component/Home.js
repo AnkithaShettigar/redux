@@ -1,16 +1,10 @@
 import React from 'react';
 
-export default function Home() {
+export default function Home(props) {
+  console.log('Home', props.data);
   return (
     <div>
       <h1 className="title">Home Container</h1>
-      <div>
-        <img
-          className="cart-icon"
-          src="https://cdn-icons-png.flaticon.com/512/4357/4357350.png"
-          alt=""
-        />
-      </div>
       <div className="content">
         <div>
           <img
@@ -24,7 +18,20 @@ export default function Home() {
           <span>Rs.1000</span>
         </div>
         <div className="button">
-          <button className="btn">Add to Cart</button>
+          <button
+            className="btn"
+            onClick={() =>
+              props.addToCartHandler({ price: 1000, name: 'NIKE' })
+            }
+          >
+            Add to Cart
+          </button>
+          <button
+            className="btn-remove"
+            onClick={() => props.removeToCartHandler()}
+          >
+            Remove to Cart
+          </button>
         </div>
       </div>
     </div>
