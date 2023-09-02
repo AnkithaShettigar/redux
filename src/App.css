@@ -31,3 +31,16 @@
   left: 90%;
   top: 5%;
 }
+.value {
+  position: absolute;
+  left: 91%;
+  top: 1%;
+  font-weight: 700;
+  font-size: 15px;
+  color: black;
+  background-color: red;
+  width: 15px;
+  height: 15px;
+  padding: 5px;
+  border-radius: 50%;
+}
