@@ -1,7 +1,7 @@
 import Header from '../component/Header';
 
 import { connect } from 'react-redux';
-import { addToCart } from '../services/Actions/Action';
+// import { addToCart } from '../services/Actions/Action';
 
 const mapTOStateProps = (state) => ({
   data: state.cartItem,
